@@ -24,6 +24,16 @@ public class PaymentRepository {
         readPayments();
     }
 
+    public PaymentRepository(String filename){
+        this.paymentList = new ArrayList<>();
+        this.filename = filename;
+        readPayments();
+    }
+
+    public void deleteAll() {
+        this.paymentList.clear();
+    }
+
     private void readPayments(){
         ClassLoader classLoader = PaymentRepository.class.getClassLoader();
         File file = new File(Objects.requireNonNull(classLoader.getResource(filename)).getFile());

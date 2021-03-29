@@ -10,8 +10,6 @@ import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import pizzashop.gui.OrdersGUI;
-import pizzashop.service.PizzaService;
-
 
 
 public class MainGUIController  {

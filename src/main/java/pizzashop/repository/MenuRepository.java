@@ -16,6 +16,11 @@ public class MenuRepository {
         //do nothing
     }
 
+    public MenuRepository(String filename){
+        this.filename=filename;
+        this.listMenu= new ArrayList<MenuDataModel>();
+    }
+
     private void readMenu(){
         ClassLoader classLoader = MenuRepository.class.getClassLoader();
         File file = new File(Objects.requireNonNull(classLoader.getResource(filename)).getFile());

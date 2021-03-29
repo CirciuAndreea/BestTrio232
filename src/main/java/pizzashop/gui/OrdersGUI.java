@@ -7,7 +7,6 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 import pizzashop.controller.OrdersGUIController;
-import pizzashop.service.PizzaService;
 
 import java.io.IOException;
 

@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="PizzaShop" />
         <module name="03_PizzaShop" />
+        <module name="BestTrio232" />
       </profile>
     </annotationProcessing>
   </component>

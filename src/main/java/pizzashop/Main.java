@@ -14,7 +14,6 @@ import pizzashop.gui.KitchenGUI;
 import pizzashop.model.PaymentType;
 import pizzashop.repository.MenuRepository;
 import pizzashop.repository.PaymentRepository;
-import pizzashop.service.PizzaService;
 
 import java.util.Optional;
 
