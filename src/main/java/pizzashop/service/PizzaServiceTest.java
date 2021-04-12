@@ -103,5 +103,30 @@ class PizzaServiceTest {
         List<Payment> paymentList = paymentRepository.getAll();
         assertEquals(paymentList.size(), 0);
     }
+    @Test
+    void TC11_WBT(){
+        double totalAmount = pizzaService.getTotalAmount(PaymentType.Cash);
+        assertEquals(0, totalAmount);
+    }
 
+    @Test
+    void TC12_WBT(){
+        pizzaService.addPayment(PaymentType.Cash, 1.00, -1);
+        double totalAmount = pizzaService.getTotalAmount(PaymentType.Cash);
+        assertEquals(0, totalAmount);
+    }
+
+    @Test
+    void TC13_WBT(){
+        pizzaService.addPayment(PaymentType.Cash, 25.00,6);
+        double totalAmount = pizzaService.getTotalAmount(PaymentType.Cash);
+        assertEquals(25.00, totalAmount);
+    }
+
+    @Test
+    void TC14_WBT(){
+        pizzaService.addPayment(PaymentType.Cash, -25.00,6);
+        double totalAmount = pizzaService.getTotalAmount(PaymentType.Cash);
+        assertEquals(0, totalAmount);
+    }
 }

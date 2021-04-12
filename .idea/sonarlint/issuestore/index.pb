@@ -25,3 +25,9 @@ i
 9src/main/java/pizzashop/controller/MainGUIController.java,9\d\9d97f1b3b833c7bf37819367d50d1d04bbeb964b
 l
 <src/main/java/pizzashop/controller/KitchenGUIController.java,f\1\f113d329464de76aa1074faec3e0f9b726224347
+e
+5src/main/java/pizzashop/service/PaymentValidator.java,4\7\477d53da7bae9b4e85f127d04248bc12d23f2051
+a
+1src/main/java/pizzashop/service/PizzaService.java,4\7\47bdc6c9cb205db26d090cbf3e15cc256314b822
+e
+5src/main/java/pizzashop/service/PizzaServiceTest.java,c\7\c7c517146458325cbe5169b54d0957bc6423ca62

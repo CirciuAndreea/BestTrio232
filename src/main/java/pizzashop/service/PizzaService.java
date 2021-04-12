@@ -27,13 +27,30 @@ public class PizzaService {
         if (PaymentValidator.validate(payment)) payRepo.add(payment);
     }
 
-    public double getTotalAmount(PaymentType type){
-        double total=0.0f;
-        List<Payment> l=getPayments();
-        if ((l==null) ||(l.size()==0)) return total;
-        for (Payment p:l){
-            if (p.getType().equals(type))
-                total+=p.getAmount();
+    public void addPayment(PaymentType type, double amount, int tableNumber) {
+        Payment payment = new Payment(tableNumber, type, amount);
+        payRepo.add(payment);
+    }
+
+    public double getTotalAmount(PaymentType type) {
+        double total = 0.0f;
+        int i = 0;
+        List<Payment> l = getPayments();
+        if (l == null) return total;
+        while (i < l.size()) {
+            Payment p = l.get(i);
+            if (p.getTableNumber() < 1 || p.getTableNumber() > 9) {
+                i = i + 1;
+                continue;
+            }
+            if (p.getAmount() < 1){
+                i = i + 1;
+                continue;
+            }
+            if (p.getType().equals(type)){
+                i = i + 1;
+                total = total + p.getAmount();
+            }
         }
         return total;
     }

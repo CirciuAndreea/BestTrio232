@@ -1,10 +1,11 @@
 
-S	java:S106D"9Replace this use of System.out or System.err by a logger.(Ρ£±Τϊÿÿÿÿ
+R
+java:S2209"5Change this instance-reference to a static reference.(Òέ™¬8άντ‡/
+F
+java:S2629R"$Invoke method(s) only conditionally.(΅ βηώÿÿÿÿ8λΣητ‡/
 b
-java:S2095B"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(ω»ύ
+java:S2095*"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(γΘ¦
+B
+java:S3010"%Remove this assignment of "filename".(Òέ™¬8άντ‡/
 b
-java:S2095"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(γΘ¦
-Y
-java:S1128">Remove this unused import 'javafx.collections.ObservableList'.(Δά€ιόÿÿÿÿ
-P
-java:S1128":Remove this unused import 'pizzashop.model.MenuDataModel'.(ƒγα
+java:S2095P"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(ω»ύ
