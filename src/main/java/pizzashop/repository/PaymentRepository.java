@@ -19,12 +19,14 @@ public class PaymentRepository {
 
     public PaymentRepository(){
         this.paymentList = new ArrayList<>();
-        readPayments();
+        this.paymentValidator = new PaymentValidator();
+        this.readPayments();
     }
 
     public PaymentRepository(String filename){
         this.paymentList = new ArrayList<>();
         this.filename = filename;
+        this.paymentValidator = new PaymentValidator();
         readPayments();
     }
 
