@@ -30,23 +30,10 @@ class PizzaServiceTest {
     }
 
     @Test
-    @DisplayName("TC1_ECP")
     void TC1_ECP() {
         pizzaService.addPayment(5, PaymentType.Cash, 10);
         List<Payment> paymentList = paymentRepository.getAll();
         assertEquals(paymentList.size(), 1);
-    }
-
-    @Test
-    @Disabled
-    void disabledTest(){
-        assertEquals(3, 3);
-    }
-
-    @Timeout(5) //fails if time exceeds 5 seconds
-    @Test
-    void timedOutTest(){
-        assertEquals(3,3);
     }
 
     @Test
@@ -116,7 +103,6 @@ class PizzaServiceTest {
         List<Payment> paymentList = paymentRepository.getAll();
         assertEquals(paymentList.size(), 0);
     }
-
     @Test
     void TC11_WBT(){
         double totalAmount = pizzaService.getTotalAmount(PaymentType.Cash);
@@ -143,5 +129,4 @@ class PizzaServiceTest {
         double totalAmount = pizzaService.getTotalAmount(PaymentType.Cash);
         assertEquals(0, totalAmount);
     }
-
 }

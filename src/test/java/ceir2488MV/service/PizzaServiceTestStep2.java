@@ -6,11 +6,9 @@ import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
-import pizzashop.model.Payment;
-import pizzashop.repository.MenuRepository;
-import pizzashop.repository.PaymentRepository;
-import pizzashop.service.PaymentValidator;
-import pizzashop.service.PizzaService;
+import ceir2488MV.model.Payment;
+import ceir2488MV.repository.MenuRepository;
+import ceir2488MV.repository.PaymentRepository;
 
 import static org.mockito.ArgumentMatchers.any;
 

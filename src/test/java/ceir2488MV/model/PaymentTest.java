@@ -2,8 +2,6 @@ package ceir2488MV.model;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import pizzashop.model.Payment;
-import pizzashop.model.PaymentType;
 
 public class PaymentTest {
 

@@ -7,9 +7,8 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
-import pizzashop.model.Payment;
-import pizzashop.repository.PaymentRepository;
-import pizzashop.service.PaymentValidator;
+import ceir2488MV.model.Payment;
+import ceir2488MV.service.PaymentValidator;
 
 public class PaymentRepositoryTest {
 

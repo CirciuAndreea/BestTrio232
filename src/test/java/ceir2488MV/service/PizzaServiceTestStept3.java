@@ -3,12 +3,10 @@ package ceir2488MV.service;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import pizzashop.model.Payment;
-import pizzashop.model.PaymentType;
-import pizzashop.repository.MenuRepository;
-import pizzashop.repository.PaymentRepository;
-import pizzashop.service.PaymentValidator;
-import pizzashop.service.PizzaService;
+import ceir2488MV.model.Payment;
+import ceir2488MV.model.PaymentType;
+import ceir2488MV.repository.MenuRepository;
+import ceir2488MV.repository.PaymentRepository;
 
 public class PizzaServiceTestStept3 {
 

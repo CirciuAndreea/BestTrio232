@@ -7,10 +7,9 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
-import pizzashop.model.Payment;
-import pizzashop.model.PaymentType;
-import pizzashop.repository.PaymentRepository;
-import pizzashop.service.PizzaService;
+import ceir2488MV.model.Payment;
+import ceir2488MV.model.PaymentType;
+import ceir2488MV.repository.PaymentRepository;
 
 import java.util.Arrays;
 

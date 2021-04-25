@@ -5,7 +5,7 @@
 
 
 <?import javafx.scene.control.ListView?>
-<VBox alignment="CENTER" prefHeight="600" prefWidth="800" spacing="10" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pizzashop.controller.KitchenGUIController">
+<VBox alignment="CENTER" prefHeight="600" prefWidth="800" spacing="10" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ceir2488MV.controller.KitchenGUIController">
 
          <children>
             <ListView prefHeight="520.0" prefWidth="800.0" fx:id="kitchenOrdersList" editable="true">
