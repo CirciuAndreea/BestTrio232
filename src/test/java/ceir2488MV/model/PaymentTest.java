@@ -1,4 +1,4 @@
-package cair2474MV.model;
+package ceir2488MV.model;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

@@ -1,4 +1,4 @@
-package cair2474MV.repository;
+package ceir2488MV.repository;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
