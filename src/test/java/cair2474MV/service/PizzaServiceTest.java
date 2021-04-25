@@ -1,4 +1,4 @@
-package pizzashop;
+package cair2474MV.service;
 
 import org.junit.jupiter.api.*;
 import pizzashop.model.Payment;
