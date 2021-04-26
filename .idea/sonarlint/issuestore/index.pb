@@ -13,8 +13,6 @@ b
 2src/main/java/ceir2488MV/service/PizzaService.java,7\3\73647f2a262648504c17e38659846cb890806950
 n
 >src/test/java/ceir2488MV/repository/PaymentRepositoryTest.java,6\5\6580456c0f498dba362ff40e4ded014757708b1c
-l
-<src/test/java/ceir2488MV/service/PizzaServiceTestStept3.java,b\8\b8a20c4973a5e34caa4b257de6cd18cfa69bf28d
 _
 /src/test/java/ceir2488MV/model/PaymentTest.java,f\3\f36da2b8ab25f733bd53af139c7a4d3b2e33502e
 j
@@ -23,3 +21,7 @@ f
 6src/test/java/ceir2488MV/service/PizzaServiceTest.java,b\a\bad12e223e956fa375b4de4ba9737da9c8d98357
 k
 ;src/test/java/ceir2488MV/service/PizzaServiceTestStep2.java,0\1\01e6a6dad4be9d22eb16342d28a1d015f2ee4b50
+m
+=src/main/java/ceir2488MV/controller/KitchenGUIController.java,1\7\17fc9fa989a5596bcb665d414b4657a766d3a163
+k
+;src/test/java/ceir2488MV/service/PizzaServiceTestStep3.java,7\b\7b84af6debd8e29b13f28e2aec982a3533e8e251

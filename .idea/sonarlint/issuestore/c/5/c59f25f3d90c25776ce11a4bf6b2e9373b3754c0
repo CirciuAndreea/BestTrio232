@@ -1,15 +1,15 @@
 
-R
-java:S2209 "5Change this instance-reference to a static reference.(Òİ™¬8ºÕÂÇ/
-i
-java:S2095b"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(ù»ı8ºÕÂÇ/
 B
 java:S3010"%Remove this assignment of "filename".(Òİ™¬8ºÕÂÇ/
+R
+java:S2209"5Change this instance-reference to a static reference.(Òİ™¬8ºÕÂÇ/
+Z	java:S106d"9Replace this use of System.out or System.err by a logger.(Ñ£±Ôúÿÿÿÿ8ºÕÂÇ/
+i
+java:S2095b"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(ù»ı8ºÕÂÇ/
+i
+java:S20954"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(ãÈˆ¦8ºÕÂÇ/
+R
+java:S2209 "5Change this instance-reference to a static reference.(Òİ™¬8ºÕÂÇ/
 B
 java:S3010 "%Remove this assignment of "filename".(Òİ™¬8ºÕÂÇ/
 v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ìöÁê8ã¥òÕ/
-R
-java:S2209"5Change this instance-reference to a static reference.(Òİ™¬8ºÕÂÇ/
-i
-java:S20954"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(ãÈˆ¦8ºÕÂÇ/
-Z	java:S106d"9Replace this use of System.out or System.err by a logger.(Ñ£±Ôúÿÿÿÿ8ºÕÂÇ/

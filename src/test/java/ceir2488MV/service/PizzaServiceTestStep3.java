@@ -34,14 +34,16 @@ public class PizzaServiceTestStep3 {
     @Test
     void getTotalAmount() {
         Payment payment = new Payment(7, PaymentType.Cash,86.31);
-        Payment payment1 = new Payment(7, PaymentType.Cash,20);
+        Payment payment1 = new Payment(7, PaymentType.Card,20);
         Payment payment2 = new Payment(7, PaymentType.Cash,63);
-        Payment payment3 = new Payment(7, PaymentType.Cash,86.14);
+        Payment payment3 = new Payment(7, PaymentType.Card,86.14);
         service.addInMemory(payment);
         service.addInMemory(payment1);
         service.addInMemory(payment2);
         service.addInMemory(payment3);
+        double cardValue = service.getTotalAmount(PaymentType.Card);
         double cashValue = service.getTotalAmount(PaymentType.Cash);
-        Assertions.assertEquals(255.45,cashValue);
+        Assertions.assertEquals(106.14,cardValue);
+        Assertions.assertEquals(149.31,cashValue);
     }
 }

@@ -1,5 +1,5 @@
 
-·
-java:S3577"”Rename class "PizzaServiceTestStep2" to match the regular expression: '^((Test|IT)[a-zA-Z0-9_]+|[A-Z][a-zA-Z0-9_]*(Test|Tests|TestCase|IT|ITCase))$'(´à­Óúÿÿÿÿ8¹ã¶¬/
 @
 java:S5786"Remove this 'public' modifier.(´à­Óúÿÿÿÿ8¹ã¶¬/
+·
+java:S3577"”Rename class "PizzaServiceTestStep2" to match the regular expression: '^((Test|IT)[a-zA-Z0-9_]+|[A-Z][a-zA-Z0-9_]*(Test|Tests|TestCase|IT|ITCase))$'(´à­Óúÿÿÿÿ8¹ã¶¬/

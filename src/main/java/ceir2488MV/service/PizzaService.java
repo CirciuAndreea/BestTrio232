@@ -47,18 +47,17 @@ public class PizzaService {
         if (l == null) return total;
         while (i < l.size()) {
             Payment p = l.get(i);
-            if (p.getTableNumber() < 1 || p.getTableNumber() > 9) {
-                i = i + 1;
+            if (p.getTableNumber() < 0 || p.getTableNumber() > 8) {
+                i++;
                 continue;
             }
-            if (p.getAmount() < 1) {
-                i = i + 1;
+            if (p.getAmount() < 0) {
+                i++;
                 continue;
             }
-            if (p.getType().equals(type)) {
-                i = i + 1;
-                total = total + p.getAmount();
-            }
+            if (p.getType().equals(type))
+                total += p.getAmount();
+            i++;
         }
         return total;
     }
