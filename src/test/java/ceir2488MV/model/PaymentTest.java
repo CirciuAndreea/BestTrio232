@@ -8,17 +8,17 @@ public class PaymentTest {
     private final Payment payment = new Payment(7, PaymentType.Cash, 80);
 
     @Test
-    public void testGetTableNumber() {
+    public void getTableNumber() {
         Assertions.assertEquals(7, payment.getTableNumber());
     }
 
     @Test
-    public void testGetType(){
+    public void getType(){
         Assertions.assertEquals(PaymentType.Cash, payment.getType());
     }
 
     @Test
-    public void testGetAmount(){
+    public void getAmount(){
         Assertions.assertEquals(80, payment.getAmount());
     }
 
