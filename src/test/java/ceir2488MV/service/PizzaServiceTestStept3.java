@@ -8,7 +8,7 @@ import ceir2488MV.model.PaymentType;
 import ceir2488MV.repository.MenuRepository;
 import ceir2488MV.repository.PaymentRepository;
 
-public class PizzaServiceTestStep3 {
+public class PizzaServiceTestStept3 {
 
     private PaymentRepository paymentRepository;
     private PizzaService service;
