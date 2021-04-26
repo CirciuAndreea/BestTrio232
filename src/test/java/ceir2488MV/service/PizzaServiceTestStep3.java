@@ -1,12 +1,13 @@
 package ceir2488MV.service;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
 import ceir2488MV.model.Payment;
 import ceir2488MV.model.PaymentType;
 import ceir2488MV.repository.MenuRepository;
 import ceir2488MV.repository.PaymentRepository;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class PizzaServiceTestStep3 {
 
@@ -25,25 +26,26 @@ public class PizzaServiceTestStep3 {
 
     @Test
     void addPaymentObject() {
-        Payment payment = new Payment(7, PaymentType.Cash,86.31);
-        Assertions.assertEquals(0,service.getPayments().size());
+        Payment payment = new Payment(7, PaymentType.Cash, 86.31);
+        assertEquals(0, service.getPayments().size());
         service.addInMemory(payment);
-        Assertions.assertEquals(1,service.getPayments().size());
+        assertEquals(1, service.getPayments().size());
     }
 
     @Test
     void getTotalAmount() {
-        Payment payment = new Payment(7, PaymentType.Cash,86.31);
-        Payment payment1 = new Payment(7, PaymentType.Card,20);
-        Payment payment2 = new Payment(7, PaymentType.Cash,63);
-        Payment payment3 = new Payment(7, PaymentType.Card,86.14);
+        Payment payment = new Payment(7, PaymentType.Cash, 86.31);
+        Payment payment1 = new Payment(7, PaymentType.Card, 20);
+        Payment payment2 = new Payment(7, PaymentType.Cash, 63);
+        Payment payment3 = new Payment(7, PaymentType.Card, 86.14);
         service.addInMemory(payment);
         service.addInMemory(payment1);
         service.addInMemory(payment2);
         service.addInMemory(payment3);
         double cardValue = service.getTotalAmount(PaymentType.Card);
         double cashValue = service.getTotalAmount(PaymentType.Cash);
-        Assertions.assertEquals(106.14,cardValue);
-        Assertions.assertEquals(149.31,cashValue);
+        assertEquals(106.14, cardValue);
+        assertEquals(149.31, cashValue);
     }
 }
+
