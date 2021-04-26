@@ -37,7 +37,7 @@ public class PizzaService {
     }
 
     public void addInMemory(Payment payment) {
-        payRepo.add(payment);
+        payRepo.addInMemory(payment);
     }
 
     public double getTotalAmount(PaymentType type) {
