@@ -46,6 +46,7 @@ public class PizzaServiceTestStep3 {
         double cashValue = service.getTotalAmount(PaymentType.Cash);
         assertEquals(106.14, cardValue);
         assertEquals(149.31, cashValue);
+
     }
 }
 
