@@ -44,6 +44,7 @@ class PizzaServiceTestStep2 {
         service.addInMemory(payment3);
         assertEquals(3, service.getPayments().size());
         Mockito.verify(paymentValidator, Mockito.times(3)).validate(any());
+
     }
 
     @Test
